@@ -1,0 +1,53 @@
+Model - Data & Business logic
+View - User interface 
+Controller - Handles user interface & interaction
+
+## Actions in a Controller :-
+1. Receiving user input - the Controller takes user input from the view.
+2. updating the model - it processes the input and updates the model accordingly.
+3. updating the view - the view is refreshed to reflect any changes in the model.
+
+## Requests & Response :-
+1. Client(browser) sends a Requests to the server
+2. server processes the rqsts and sends a rqsts
+3. Type of rqsts :- GET(retreive the info.), POST(Submit data), PUT(update existing data), DELETE(remove the data)
+
+## API Response will always be in mine/json and HTML Response will be in text/html.
+API - Application Programming Interface.
+It is a set of definitions and protocols that allows two applications to communicate with each other.
+APIs are used to share data and functionality b/w applications.
+APIs follows a Requests-response model.
+there are many d/f types of APIs such as Web APIS, Library APis, Database APIs and Hardware APIs.
+Web APIs includes REST APIs, RPC APIs, GraphQL APIs, etc......
+
+## CRUD Operations :-
+CRUD stands for Create, Read, Update and Delete - the fundamental Operations for handling data.
+1. Create -> Add a new entry
+2. Read -> Retreive and display data
+3. Update -> Modify existing data
+4. Delete -> Remove existing data
+CRUD in databases: Some databases are Read-Heavy, while other are Write-Heavy.
+CRUD provides a structured approach to API design and databases interactions.
+
+## API for CRUD 
+an API for CRUD is a set of endpoints that allow users  to perform CRUD operations on a database. These endpoints are typically exposed via HTTP Requests, and they use the HTTP methods GET, POST, PUT and DELETE to represent the d/f CRUD operations.
+
+##Examples in Python using Decorators:
+def my_decorator(func): 
+    def wrapper():
+        print("Before Function Call")
+        func()
+        print("After Function Call")
+    return wrapper
+#applying decorator to a function 
+@my_decorator
+def greet():
+    print("Hello")
+greet()
+
+#### this code O/p will be -
+Before Function Call
+Hello
+After Function Call
+
+
