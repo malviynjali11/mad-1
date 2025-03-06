@@ -1,0 +1,30 @@
+## Understanding RESTful APIs with Flask-RESTful
+# How APIs work ? Imagine ordering food at a restaurant. The waiter(API) takes your order (request), gives it to the kitchen(server), and brings back the food(response).
+#### Heirarchy: From Route to Flask-RESTful API
+1. Flask Route(@app.route): The most basic way to create an API using Flask. It defines individual endpoints manually & maps them to functions.
+e.g. @app.route('/hello', methods=['GET'])
+     def hello():
+        return "Hello, World!"
+
+2. API(Application Program Interface)
+
+3. RESTful API: A RESTful API follows the principles of REST(Representational State Transfer) to enable efficient client-server communication. It follows standard HTTP methods.
+HTTP Method  Operation             CRUD
+GET          Retrieve Data         Read
+POST         Create new Data       Create
+PUT          Update existing data  Update
+DELETE       Remove data           delete
+
+4. Flask-RESTful API: It organizes endpoints using class-based resources, making it easier to manage complex APIs.
+e.g.
+from flask_restful import Resource, API
+class Hello(Resource):
+    def get(self):
+        return {"message": "Hello, World!"}
+
+API creation - @app.route decorator[Flask Route], Uses Resource class & add_resource method[Flask-RESTful]
+HTTP methods - need explicit functions definitions[Flask Route], handles multiple HTTP methods using class methods[Flask-RESTful]
+Code organization - less structured & function-based[Flask Route], More structured & class based[Flask-RESTful]
+Scalability - can become complex with many routes[Flask Route], easier to manage as API grows[Flask-RESTful]
+Data Parsing - Uses request.json for input[Flask Route], Uses reqparse.RequestParses for structured input handling[Flask-RESTful]
+Response format - Uses jsonify() for response[Flask Route], Returns a dictionary, automatically converted to JSON[Flask-RESTful]
