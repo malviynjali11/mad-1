@@ -1,0 +1,23 @@
+Client-Server Architecture: Where the client and the server are two separate entities that communicate with each other over a network. The client requests data from the server, and the server provides the requested data.
+
+Stateless Architecture: It means the server does not maintain any state about the client.
+
+Layered Architecture: It divides as application into multiple layers, each responsible for a specific task, maintaining the application easier to develop, maintain and scale.
+
+Cacheability: It refers to storing data in a cache so that it can be accessed more quickly later, improving web application performance by reducing server requests.
+
+Uniform Interface: It is a set of constraints that define how resources should be represented and accessed in a RESTful web app.
+these constraints ensure consistency and ease of use.
+
+HTTP Methods
+
+1. GET - multiple identical requests produce the same results, means it is idempotent.
+2. POST - multiple requests may create multiple resources, means it is not idempotent.
+3. PUT - updates an existing resources or creates a new one if it doesnt exist. It is idempotent.
+4. DELETE - multiple delete operations on the same resources have the same effect.
+
+Idempotent Operations: If applying it multiple times does not change the result beyond the first application.
+e.g. GET, PUT, DELETE
+
+REST(Web Services) and CRUD(Database Operations)
+
