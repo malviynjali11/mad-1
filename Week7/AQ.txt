@@ -1,0 +1,63 @@
+Registers are used to store data & instructions that are being used immediately by the CPU.
+Registers are located on the CPU.
+Registers are present in small numbers in any processor.
+
+SRAM - Static Random Access Memory
+DRAM - Dynamic Random Access Memory (in general, when we say RAM , we means DRAM only)
+
+Cache is usually implemented using SRAM.
+Hard disk(HDD) > Registers > Cache [Storage Capacity]
+Cache Memory is limited in Capacity but its not better than Registers.
+Cache Memory lies within the Memory heirarchy.
+
+SSDs use flash-based Memory which is faster than the traditional HDDs.
+SSDs are non-volatile.(means, Data is non-erasable , data is stored)
+SSDs has a large storage Capacity and can store up to serveral hundreds of gigabytes of data.
+
+Latency, Throughput , Density - Are metrics used to compare d/f storage elements.
+
+Register < SRAM < DRAM < SSD < HDD [storage device, in the context of latency]
+
+Binary Search - O(logN) no. of steps are required to search for an element in Memory, where N no. of element is stored in the sorted format in an array.
+
+For an array with "N" elements, o(k^N) will give worst results as far as the smallest change in input is concerned.
+
+Sorted data in an array can be solved with O(logN) time complexity.
+
+In context of MySQL, Hash Tables are used only in in-Memory tables.
+
+Storage is the component of a computer that allows us to store the data on a long-term basis.
+RAM is the temporary storage area in the context of program.
+
+SQL - Structured Query Language
+
+Not a relational databases - Document databases, Key-value, graphs, time-series data
+
+Document databases[JSON Data] - MongoDB
+
+Storing data in graphs involve d/f degrees like number of outgoing edges, weight of edges, nodes, etc.
+In graphs, path finding is more imp than just just searching the data.
+Data on social networks can be stored with the help of graphs.
+
+Redundancy refers to the duplication of data at serveral places in the databases.
+Redundancy is used for the purpose of backup.
+Data Redundancy increase the cost of storing & retreiving data.
+
+Data Replication refers to having multiple copies of the same data at multiple places with the virtue of reducing server load.
+
+ACID is an acronym for Atomicity, Consistency, Isolation & Durability.
+
+DRAM has more latency than SRAM.
+DRAM has more Throughput than SSD.
+SSD is more cost-efficient than SRAM.
+Among SRAM, DRAM & HDD, HDD are most cost-efficient.
+
+Cold storages are designed to store huge amounts of data that is not read very often.
+Cold storages offer high Durability of stored data.
+
+high latency of retrieval from an Amazon glacier takes up to 40-50hrs.
+
+HTTPs provides secure sockets which establishes secure communication b/w client and server.
+HTTPs is more advanced and secure version of HTTP.
+
+
